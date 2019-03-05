@@ -19,9 +19,9 @@ class DqnBot(object):
         # discount rate
         self.gamma = 0.95
         # random action rate
-        self.epsilon = 0.8
+        self.epsilon = 0.9
         # random action rate decay
-        self.epsilon_decay = 0.95
+        self.epsilon_decay = 0.9995
 
     def build_model(self):
         inputs = keras.Input(shape=(3,))

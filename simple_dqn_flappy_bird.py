@@ -39,7 +39,7 @@ class DqnBot(object):
         pass
     def move(self, state):
         if np.random.rand() < self.epsilon:
-            return np.random.randint(0, 1)
+            return np.random.randint(0, 2)
         else :
             return np.argmax(self.model.predict(state)[0])
 
